@@ -1,0 +1,10 @@
+{
+    "clangd.path": "/home/kafi/.local/bin/ros-clangd-wrapper",
+    "clangd.arguments": [
+        "--background-index",
+        "--header-insertion=never",
+        "--compile-commands-dir=/home/kafi/ubuntu/ws_moveit",
+        "--path-mappings=/opt/ros/humble=/home/kafi/.local/share/distrobox/containers/ubuntu/opt/ros/humble",
+        "--path-mappings=/usr/include=/home/kafi/.local/share/distrobox/containers/ubuntu/usr/include"
+    ]
+}
