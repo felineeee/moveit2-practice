@@ -1,0 +1,2 @@
+ros2 launch my_moveit display_robot.launch.py
+ros2 launch my_moveit move_group_interface.launch.py

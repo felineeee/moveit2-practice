@@ -31,14 +31,14 @@ foreach(Dependency IN ITEMS ${THIS_PACKAGE_INCLUDE_DEPENDS})
   find_package(${Dependency} REQUIRED)
 endforeach()
 
-add_executable(mtc_node src/mtc_node.cpp)
-add_executable(robot_model_state src/robot_model_state.cpp)
-add_executable(motion_planning_pipeline src/motion_planning_pipeline.cpp)
-add_executable(motion_planning_api src/motion_planning_api.cpp)
-add_executable(display_robot src/display_robot.cpp)
-add_executable(planning_scene_ros_api src/planning_scene_ros_api.cpp)
-add_executable(planning_scene src/planning_scene.cpp)
-add_executable(move_group_interface src/move_group_interface.cpp)
+add_executable(mtc_node src/mtc/mtc_node.cpp)
+add_executable(robot_model_state src/robot/robot_model_state.cpp)
+add_executable(motion_planning_pipeline src/motion_planning/motion_planning_pipeline.cpp)
+add_executable(motion_planning_api src/motion_planning/motion_planning_api.cpp)
+add_executable(display_robot src/robot/display_robot.cpp)
+add_executable(planning_scene_ros_api src/planning_scene/planning_scene_ros_api.cpp)
+add_executable(planning_scene src/planning_scene/planning_scene.cpp)
+add_executable(move_group_interface src/move_group/move_group_interface.cpp)
 
 target_include_directories(mtc_node PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>

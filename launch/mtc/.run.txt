@@ -1,0 +1,2 @@
+ros2 launch my_moveit mtc_demo.launch.py
+ros2 launch my_moveit mtc_demo_minimal.launch.py

@@ -36,6 +36,7 @@ def generate_launch_description():
     )
 
     # RViz
+    # @TODO Where is this rviz file is
     rviz_config_file = (
         get_package_share_directory("moveit2_tutorials") + "/launch/mtc.rviz"
     )
